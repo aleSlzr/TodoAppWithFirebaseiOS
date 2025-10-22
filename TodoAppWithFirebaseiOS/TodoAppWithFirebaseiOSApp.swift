@@ -11,7 +11,7 @@ import SwiftUI
 struct TodoAppWithFirebaseiOSApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AppStartingView()
         }
     }
 }
