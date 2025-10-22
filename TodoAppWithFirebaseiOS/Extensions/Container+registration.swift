@@ -15,4 +15,12 @@ extension Container {
             }
         }.singleton
     }
+    
+    var authStore: Factory<any AuthStoreProtocol> {
+        self {
+            MainActor.assumeIsolated {
+                AuthStore()
+            }
+        }.singleton
+    }
 }
