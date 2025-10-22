@@ -1,0 +1,24 @@
+# Xcode
+.DS_Store
+*.xcodeproj
+xcuserdata/
+DerivedData/
+build/
+.swiftpm/
+.vscode/
+.idea/
+
+# Swift Package Manager
+.build/
+
+# CocoaPods
+Pods/
+
+# Carthage
+Carthage/
+
+# Other common files
+*.xcworkspace
+*.xcuserstate
+*.xcscheme
+TodoAppWithFirebaseiOS/GoogleService-Info.plist
