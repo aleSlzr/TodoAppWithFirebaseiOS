@@ -21,7 +21,7 @@ extension Color {
             text: .init(.text),
             secondaryText: .init(.secondaryText),
             alternateText: .init(.alternateText),
-            accentConstrastText: .init(.accentContrastText),
+            accentContrastText: .init(.accentContrastText),
             primaryAction: .init(.primaryAction),
             neutralAction: .init(.neutralAction),
             destructive: .init(.destructive),
@@ -44,7 +44,7 @@ struct AppColorTheme {
     let text: Color
     let secondaryText: Color
     let alternateText: Color
-    let accentConstrastText: Color
+    let accentContrastText: Color
     let primaryAction: Color
     let neutralAction: Color
     let destructive: Color
@@ -56,6 +56,8 @@ struct AppColorTheme {
     let divider: Color
     let miscellaneous: Color
 }
+
+// MARK: - Preview
 
 #Preview("Light Mode") {
     Preview()
@@ -84,7 +86,7 @@ fileprivate struct Preview: View {
                     .padding()
                     .background(Color.appTheme.accent)
                     .cornerRadius(8)
-                    .foregroundColor(.appTheme.accentConstrastText)
+                    .foregroundColor(.appTheme.accentContrastText)
             }
             .padding()
         }
